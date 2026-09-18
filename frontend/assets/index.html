@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Dashboard de gestão da Mercearia do João">
+   <title>Mercearia do João — Dashboard</title>
+
+
+   <link rel="stylesheet" href="../css/style.css">
+</head>
+**
+<body>
+   <header class="site-header">
+       <div class="header-content">
+           <a class="brand" href="#" aria-label="Mercearia do J - Início">
+               <span class="brand-icon" aria-hidden="true">🛒</span>
+               <span>Mercearia do João</span>
+           </a>
+
+
+           <nav class="main-nav" aria-label="Navegação principal">
+               <ul class="nav-list">
+                   <li>
+                       <a class="nav-link active" href="#" aria-current="page">
+                           <span aria-hidden="true">⌂</span>
+                           <span>Início</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="nav-link" href="#">
+                           <span aria-hidden="true">▣</span>
+                           <span>Produtos</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="nav-link" href="#">
+                           <span aria-hidden="true">↗</span>
+                           <span>Vendas</span>
+                       </a>
+                   </li>
+                   <li>
+                       <a class="nav-link" href="#">
+                           <span aria-hidden="true">♙</span>
+                           <span>Clientes</span>
+                       </a>
+                   </li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+
+   <main class="dashboard">
+       <section class="dashboard-intro" aria-labelledby="dashboard-title">
+           <div>
+               <p class="eyebrow">Visão geral</p>
+               <h1 id="dashboard-title">Olá, seja bem-vindo!</h1>
+               <p class="intro-text">
+                   Acompanhe os principais números da sua mercearia.
+               </p>
+           </div>
+       </section>
+
+
+       <section class="metrics" aria-label="Indicadores principais">
+           <article class="metric-card">
+               <div class="metric-icon stock-icon" aria-hidden="true">
+                   <span>▦</span>
+               </div>
+
+
+               <div class="metric-content">
+                   <h2>Produtos em estoque</h2>
+                   <p class="metric-value">128</p>
+                   <p class="metric-description">produtos disponíveis</p>
+               </div>
+           </article>
+
+
+           <article class="metric-card">
+               <div class="metric-icon sales-icon" aria-hidden="true">
+                   <span>R$</span>
+               </div>
+
+
+               <div class="metric-content">
+                   <h2>Vendas hoje</h2>
+                   <p class="metric-value">R$ 1.250,00</p>
+                   <p class="metric-description">total vendido hoje</p>
+               </div>
+           </article>
+
+
+           <article class="metric-card">
+               <div class="metric-icon customers-icon" aria-hidden="true">
+                   <span>♙</span>
+               </div>
+
+
+               <div class="metric-content">
+                   <h2>Clientes</h2>
+                   <p class="metric-value">86</p>
+                   <p class="metric-description">clientes cadastrados</p>
+               </div>
+           </article>
+       </section>
+
+
+       <section class="receivables-section" aria-labelledby="receivables-title">
+           <div class="section-heading">
+               <div>
+                   <p class="eyebrow">Financeiro</p>
+                   <h2 id="receivables-title">Contas a receber</h2>
+               </div>
+
+
+               <span class="section-count">3 contas</span>
+           </div>
+
+
+           <div class="table-container">
+               <table class="receivables-table">
+                   <caption>
+                       Contas a receber cadastradas
+                   </caption>
+
+
+                   <thead>
+                       <tr>
+                           <th scope="col">Nome</th>
+                           <th scope="col">Valor</th>
+                           <th scope="col">Data limite</th>
+                       </tr>
+                   </thead>
+
+
+                   <tbody>
+                       <tr>
+                           <td>
+                               <span class="customer-name">João Silva</span>
+                           </td>
+                           <td class="amount">R$ 120,00</td>
+                           <td>
+                               <span class="date">10/09/2026</span>
+                               <span class="status status-warning">
+                                   Próximo do vencimento
+                               </span>
+                           </td>
+                       </tr>
+
+
+                       <tr>
+                           <td>
+                               <span class="customer-name">Maria Santos</span>
+                           </td>
+                           <td class="amount">R$ 85,50</td>
+                           <td>
+                               <span class="date">12/09/2026</span>
+                               <span class="status status-normal">
+                                   Em aberto
+                               </span>
+                           </td>
+                       </tr>
+
+
+                       <tr>
+                           <td>
+                               <span class="customer-name">Pedro Souza</span>
+                           </td>
+                           <td class="amount">R$ 230,00</td>
+                           <td>
+                               <span class="date">15/09/2026</span>
+                               <span class="status status-normal">
+                                   Em aberto
+                               </span>
+                           </td>
+                       </tr>
+
+
+                       <tr>
+                           <td>
+                               <span class="customer-name">Ana Oliveira</span>
+                           </td>
+                           <td class="amount">R$ 95,00</td>
+                           <td>
+                               <span class="date">01/09/2026</span>
+                               <span class="status status-overdue">
+                                   Vencida
+                               </span>
+                           </td>
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+       </section>
+   </main>
+
+
+   <footer class="site-footer">
+       <p>© 2026 Mercearia do J. Todos os direitos reservados.</p>
+   </footer>
+</body>
+
+
+</html>
